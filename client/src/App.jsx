@@ -21,7 +21,7 @@ function App() {
   ])
 
   const myStyle = {
-    backgroundImage: "url(https://images.pexels.com/photos/47334/meadow-grass-palm-tree-forest-plenty-of-natural-light-47334.jpeg?auto=compress&cs=tinysrgb&w=400)",
+    backgroundImage: "url(https://images.pexels.com/photos/257360/pexels-photo-257360.jpeg?auto=compress&cs=tinysrgb&w=400)",
     backgroundRepeat: "no-repeat",
     backgroundAttachment: 'fixed',
     backgroundSize: "cover",
