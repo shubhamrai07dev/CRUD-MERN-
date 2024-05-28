@@ -30,16 +30,16 @@ function GetUser() {
 
   return (
     <>
-      <div>
-        <div className="text-green-200 flex justify-center">
+      <div className="text-white" >
+        <div className="flex flex-col items-center justify-center">
           <Link to={"/add"}>
-            <button className="border bg-red-700 rounded-md px-2">
+            <button className="border rounded-md m-5 px-3 py-2  backdrop-filter backdrop-blur-md duration-500 font-bold">
               Add user
             </button>
           </Link>
           <div>
-            <table className="border text-center border-spacing-6">
-              <thead className="bg-slate-900">
+            <table className="border rounded-md border-separate backdrop-blur-md text-center border-spacing-9">
+              <thead className="bg-0">
                 <tr>
                   <th>Sr No.</th>
                   <th>User Name</th>
@@ -56,18 +56,18 @@ function GetUser() {
                         {user.fname} {user.lname}
                       </td>
                       <td>{user.email}</td>
-                      <td>
+                      <td className="grid space-x-2 grid-cols-2">
                         <button
                           onClick={() => deleteUser(user._id)}
-                          className="border bg-red-700 rounded-md px-2"
+                          className="border border-red-300 rounded-md px-2 hover:text-red-500 font-bold"
                         >
-                          delete
+                          Delete
                         </button>
                         <Link
                           to={"/update/" + user._id}
-                          className="border bg-green-700 rounded-md px-2"
+                          className="border border-green-300 rounded-md px-2 hover:text-green-500 font-bold"
                         >
-                          edit
+                          Edit
                         </Link>
                       </td>
                     </tr>
